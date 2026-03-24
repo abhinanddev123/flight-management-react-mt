@@ -148,7 +148,7 @@ export default function FlightDetails() {
                 <th > <span style={{ cursor: 'pointer', fontWeight: 500, color: '#247fce'  }} onClick={()=>handleSort('price')}>Price {sortBy.field == 'price' ? sortBy.direction == 'asc' ? '↑' : '↓' : ''}</span>  {sortBy.field == 'price' ? <span onClick={handleSortClose}>X</span> : ''} </th>
                 <th ><span style={{ cursor: 'pointer', fontWeight: 500, color: '#247fce' }} onClick={()=>handleSort('duration')}>Duration {sortBy.field == 'duration' ? sortBy.direction == 'asc' ? '↑' : '↓' : ''}</span> {sortBy.field == 'duration' ? <span onClick={handleSortClose}>X</span> : ''}</th>
                 <th ><span style={{ cursor: 'pointer', fontWeight: 500, color: '#247fce' }} onClick={()=>handleSort('arr')}>Arrival {sortBy.field == 'arr' ? sortBy.direction == 'asc' ? '↑' : '↓' : ''}</span>{sortBy.field == 'arr' ? <span onClick={handleSortClose}>X</span> : ''}</th>
-                <th ><span style={{ cursor: 'pointer', fontWeight: 500, color: '#6c757d' }} onClick={()=>handleSort('dep')} >Departure {sortBy.field == 'dep' ? sortBy.direction == 'asc' ? '↑' : '↓' : ''}</span>{sortBy.field == 'dep' ? <span onClick={handleSortClose}>X</span> : ''}</th>
+                <th ><span style={{ cursor: 'pointer', fontWeight: 500, color: '#247fce' }} onClick={()=>handleSort('dep')} >Departure {sortBy.field == 'dep' ? sortBy.direction == 'asc' ? '↑' : '↓' : ''}</span>{sortBy.field == 'dep' ? <span onClick={handleSortClose}>X</span> : ''}</th>
 
               </tr>
             </thead>
